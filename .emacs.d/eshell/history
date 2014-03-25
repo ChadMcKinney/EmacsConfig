@@ -1,0 +1,29 @@
+ls
+cd Documents/source/WebDev/Lich.js/Lich.js
+ls
+cd Library
+ls
+ls
+cd Documents/source/WebDev
+ls
+cd Lich.js/Lich.js
+ls
+ls
+cd Documents/source/HaskellDev
+ls
+chown octopian -R ./
+sudo chown octopian -R ./
+ls
+ls -a
+cd .emacs.d
+ls
+ls
+ls
+cd Documents/source/WebDev/Lich.js/Lich.js
+cd Library
+cd ~/.emacs.d
+ls
+ls
+mkdir article
+cd article
+ls
