@@ -1,4 +1,6 @@
-((el-get status "installed" recipe
+((desktop-menu status "installed" recipe
+			   (:name desktop-menu :auto-generated t :type emacswiki :description "menu for managing Emacs desktops" :website "https://raw.github.com/emacsmirror/emacswiki.org/master/desktop-menu.el"))
+ (el-get status "installed" recipe
 		 (:name el-get :website "https://github.com/dimitri/el-get#readme" :description "Manage the external elisp bits and pieces you depend upon." :type github :branch "master" :pkgname "dimitri/el-get" :info "." :load "el-get.el"))
  (package status "installed" recipe
 		  (:name package :description "ELPA implementation (\"package.el\") from Emacs 24" :builtin "24" :type http :url "http://repo.or.cz/w/emacs.git/blob_plain/1a0a666f941c99882093d7bd08ced15033bc3f0c:/lisp/emacs-lisp/package.el" :shallow nil :features package :post-init
@@ -26,4 +28,11 @@
 					'(("ELPA" . "http://tromey.com/elpa/")
 					  ("gnu" . "http://elpa.gnu.org/packages/")
 					  ("marmalade" . "http://marmalade-repo.org/packages/")
-					  ("SC" . "http://joseito.republika.pl/sunrise-commander/")))))))
+					  ("SC" . "http://joseito.republika.pl/sunrise-commander/"))))))
+ (tabbar status "installed" recipe
+		 (:name tabbar :type emacswiki :description "Display a tab bar in the header line" :lazy t :load-path "."))
+ (undo-tree status "installed" recipe
+			(:name undo-tree :description "Treat undo history as a tree" :website "http://www.dr-qubit.org/emacs.php" :type git :url "http://www.dr-qubit.org/git/undo-tree.git/"))
+ (yasnippet status "installed" recipe
+			(:name yasnippet :website "https://github.com/capitaomorte/yasnippet.git" :description "YASnippet is a template system for Emacs." :type github :pkgname "capitaomorte/yasnippet" :compile "yasnippet.el" :submodule nil :build
+				   (("git" "submodule" "update" "--init" "--" "snippets")))))

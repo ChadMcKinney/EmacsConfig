@@ -1,3 +1,4 @@
+
 ;; Marmalade
 (require 'package)
 (add-to-list 'package-archives 
@@ -7,6 +8,7 @@
 
 ;; theme
 (load-theme 'twilight t)
+;(load-theme 'bubbleberry t)
 
 ;; ;; adds the el-get commands
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -37,6 +39,17 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
+
+
+;; undo tree
+(require 'undo-tree)
+(global-undo-tree-mode 1)
+
+;; remap undo 
+(global-set-key (kbd "M-/") 'redo) ; Alt-/;
+
+;; bind ibuffer to f10
+(global-set-key [f10] 'ibuffer) ; Alt-/;
 
 
 ;; Cycle between buffers using f11 and f12
@@ -104,8 +117,8 @@
 
 
 ;; desktop, stores and restores sessions between opening
-;(require 'desktop)
-;(desktop-save-mode 1)
+(require 'desktop)
+(desktop-save-mode 1)
 
 
 ;; dired won't open multiple buffers when pressing 'a'
@@ -114,6 +127,22 @@
 
 ;; Lich.js highlighting
 (setq auto-mode-alist (cons '("\\.lich" . haskell-mode) auto-mode-alist))
+
+;; Haskell-mode tab setting
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
+;; Make Haskell use 4 spaces for tabs and other sane things.
+(custom-set-variables
+ '(haskell-indent-spaces 4)
+ '(haskell-indentation-cycle-warn nil)
+ '(haskell-indentation-ifte-offset 4)
+ '(haskell-indentation-layout-offset 4)
+ '(haskell-indentation-left-offset 4)
+ '(haskell-indentation-where-post-offset 4)
+ '(haskell-indentation-where-pre-offset 4)
+)
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Custom Modeline
