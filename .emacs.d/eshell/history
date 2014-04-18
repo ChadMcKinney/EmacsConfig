@@ -27,3 +27,64 @@ ls
 mkdir article
 cd article
 ls
+cd ~/Documents
+ls
+cd "Doctoral Research"
+ls
+cd "GTA"
+ls
+cd "Computer Music"
+ls
+cd 2014
+ls
+cd work2
+ls
+ls
+cd ../
+ls
+cd ../
+ls
+cd Doctoral\ Research
+ls
+cd SupervisorMeetings
+ls
+ls
+cd ../
+ls
+cd NIME\ 2014
+ls
+cd LichPaper
+ls
+cd ../
+ls
+cd ../
+ls
+cd DistCoStudy
+ls
+cd article
+ls
+cd ../
+cd ../
+ls
+cd NIME\ 2014
+ls
+cd LichPaper
+ls
+ls
+cd ../
+ls
+cd ../
+ls
+cd ~/Documents/source/WebDev/Lich.js/Lich.js
+ls
+cd Compiler
+ls
+cd ~/Documents
+ls
+cd Doctoral\ Research
+ls
+cd NIME\ 2014
+ls
+cd LichPaper
+ls
+ls

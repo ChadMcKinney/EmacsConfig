@@ -35,4 +35,7 @@
 			(:name undo-tree :description "Treat undo history as a tree" :website "http://www.dr-qubit.org/emacs.php" :type git :url "http://www.dr-qubit.org/git/undo-tree.git/"))
  (yasnippet status "installed" recipe
 			(:name yasnippet :website "https://github.com/capitaomorte/yasnippet.git" :description "YASnippet is a template system for Emacs." :type github :pkgname "capitaomorte/yasnippet" :compile "yasnippet.el" :submodule nil :build
-				   (("git" "submodule" "update" "--init" "--" "snippets")))))
+				   (("git" "submodule" "update" "--init" "--" "snippets"))))
+ (zenburn-theme status "installed" recipe
+				(:name zenburn-theme :description "Zenburn theme for Emacs" :type http :url "https://raw.github.com/djcb/elisp/master/themes/zenburn-theme.el" :post-init
+					   (add-to-list 'custom-theme-load-path default-directory))))

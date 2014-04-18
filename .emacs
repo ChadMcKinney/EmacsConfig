@@ -7,6 +7,8 @@
 (package-initialize)
 
 ;; theme
+;(load-theme 'spacegray t)
+;(load-theme 'zenburn t)
 (load-theme 'twilight t)
 ;(load-theme 'bubbleberry t)
 
@@ -47,6 +49,9 @@
 
 ;; remap undo 
 (global-set-key (kbd "M-/") 'redo) ; Alt-/;
+
+;; Type/Backspace deletes selection
+(delete-selection-mode 1)
 
 ;; bind ibuffer to f10
 (global-set-key [f10] 'ibuffer) ; Alt-/;
@@ -94,6 +99,9 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+;; bar style cursor
+(set-default 'cursor-type 'bar)
+
 ;; Highlight matching brackets
 (setq show-paren-delay 0)   
 (show-paren-mode t)
@@ -133,6 +141,10 @@
 
 ;; Make Haskell use 4 spaces for tabs and other sane things.
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(haskell-indent-spaces 4)
  '(haskell-indentation-cycle-warn nil)
  '(haskell-indentation-ifte-offset 4)
@@ -140,7 +152,7 @@
  '(haskell-indentation-left-offset 4)
  '(haskell-indentation-where-post-offset 4)
  '(haskell-indentation-where-pre-offset 4)
-)
+ '(safe-local-variable-values (quote ((hl-sexp-mode) (rainbow-mode . t)))))
 
 
 
@@ -212,3 +224,9 @@
     ;;minor-mode-alist  ;; list of minor modes
     "% " ;; fill with '-'
     ))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
