@@ -1,3 +1,6 @@
+;(add-to-list 'default-frame-alist '(font . "Lucida Console" ))
+;(set-face-attribute 'default t :font "Lucida Console" )
+
 ;; Marmalade
 (require 'package)
 (add-to-list 'package-archives 
@@ -9,18 +12,15 @@
 
 ;; theme
 ;(load-theme 'zenburn t)
-(load-theme 'twilight t)
+;(load-theme 'twilight t)
 ;(load-theme 'subdued t)
-;(load-theme 'molokai t)
-;(load-theme 'soft-charcoal t)
-;(load-theme 'zen-and-art t)
-;(load-theme 'ample t)
+(load-theme 'dotshare t)
 
 ;;CUA commands
 (cua-mode t)
 (setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
 (transient-mark-mode 1) ;; No region when it is not highlighted
-(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+;(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
 
 ;; ;; adds the el-get commands
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -117,7 +117,7 @@
 (setq auto-save-default nil)
 
 ;; bar style cursor
-;;(set-default 'cursor-type 'bar)
+(set-default 'cursor-type 'bar)
 
 ;; Highlight matching brackets
 (setq show-paren-delay 0)   
