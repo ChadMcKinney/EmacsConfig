@@ -14,7 +14,8 @@
 ;(load-theme 'zenburn t)
 ;(load-theme 'twilight t)
 ;(load-theme 'subdued t)
-(load-theme 'dotshare t)
+;(load-theme 'dotshare t)
+(load-theme 'lich t)
 
 ;;CUA commands
 (cua-mode t)
