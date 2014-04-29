@@ -21,6 +21,8 @@
 (custom-theme-set-faces
  'lich
 
+ `(minibuffer-prompt ((t (:foreground ,"#325f7f"))))
+ 
  '(default ((t (:background "#111111" :foreground "#d3d7cf"))))
  '(mouse ((t (:foregound "black"))))
  '(cursor ((t (:foregound "#73d216"))))
@@ -39,13 +41,15 @@
  '(font-lock-variable-name-face ((t (:foreground "#4ea683"))))
  '(font-lock-preprocessor-face ((t (:foreground "#902550" :bold t))))
  '(font-lock-constant-face ((t (:foreground "#4ea683" :bold t))))
- '(font-lock-type-face ((t (:foreground "#4ea683"))))
+ '(font-lock-type-face ((t (:foreground "#4ea683" :bold))))
  '(font-lock-warning-face ((t (:bold t :foreground "#913360"))))
-
+ '(c++-font-lock-extra-types ((t (:foreground "#913360" :bold))))
+ '(javascript-font-lock-extra-types ((t (:foreground "#913360" :bold))))
+ '(haskell-font-lock-extra-types ((t (:foreground "#913360" :bold))))
  
  ;; Search
  '(isearch ((t (:foreground "#080808" :background "#aa0077"))))
- '(isearch-lazy-highlight-face ((t (:foreground "#080808" :background "#7777aa"))))
+ '(isearch-lazy-highlight-face ((t (:foreground "#080808" :background "#7799aa"))))
 
 
  ;; Parenthesis matching
