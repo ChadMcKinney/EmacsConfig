@@ -130,7 +130,7 @@
    ;;; external
 
    ;; auto-complete
-   `(ac-candidate-face ((,class (:background ,dotshare-bg+2 :foreground "white"))))
+   `(ac-candidate-face ((,class (:background ,dotshare-bg :foreground "white"))))
    `(ac-selection-face ((,class (:background ,dotshare-blue-4 :foreground ,dotshare-fg))))
    `(popup-tip-face ((,class (:background ,dotshare-yellow-2 :foreground "black"))))
    `(popup-scroll-bar-foreground-face ((,class (:background "white"))))
