@@ -1,4 +1,3 @@
-
 ;; Marmalade
 (require 'package)
 (add-to-list 'package-archives 
@@ -6,11 +5,16 @@
       "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
 ;; theme
-;(load-theme 'spacegray t)
 ;(load-theme 'zenburn t)
 (load-theme 'twilight t)
-;(load-theme 'bubbleberry t)
+;(load-theme 'subdued t)
+;(load-theme 'molokai t)
+;(load-theme 'soft-charcoal t)
+;(load-theme 'zen-and-art t)
+;(load-theme 'ample t)
 
 ;;CUA commands
 (cua-mode t)
@@ -33,6 +37,9 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
 
+
+(add-to-list 'custom-theme-load-path (file-name-as-directory "~/.emacs.d/el-get-user/recipes"))
+
 ;; Sane tab settings
 (setq tab-width 4)
 (set-default 'tab-width 4)
@@ -53,8 +60,9 @@
 ;;(require 'undo-tree)
 ;;(global-undo-tree-mode 1)
 
-;; remap undo 
+;; remap redo 
 (global-set-key (kbd "C-S-z") 'redo) ; Ctrl-Shift-z
+(global-set-key (kbd "M-/") 'redo) ; Alt-/
 
 ;; Type/Backspace deletes selection
 (delete-selection-mode 1)
@@ -104,12 +112,12 @@
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
 (menu-bar-mode 0)
-(blink-cursor-mode 0)
+;(blink-cursor-mode 0)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
 ;; bar style cursor
-(set-default 'cursor-type 'bar)
+;;(set-default 'cursor-type 'bar)
 
 ;; Highlight matching brackets
 (setq show-paren-delay 0)   
