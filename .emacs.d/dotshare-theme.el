@@ -113,7 +113,7 @@
    `(font-lock-constant-face ((,class (:foreground ,dotshare-fg))))
    `(font-lock-doc-face ((,class (:foreground ,dotshare-green+1))))
    `(font-lock-doc-string-face ((,class (:foreground ,dotshare-blue+1))))
-   `(font-lock-function-name-face ((,class (:foreground ,dotshare-blue))))
+   `(font-lock-function-name-face ((,class (:foreground ,dotshare-blue :weight bold))))
    ;;`(font-lock-keyword-face ((,class (:foreground ,dotshare-yellow :weight bold))))
    `(font-lock-keyword-face ((,class (:foreground ,dotshare-brown :weight bold))))
    `(font-lock-negation-char-face ((,class (:foregorund ,dotshare-fg))))
