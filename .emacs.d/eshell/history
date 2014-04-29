@@ -88,3 +88,12 @@ ls
 cd LichPaper
 ls
 ls
+ls
+cd ../../
+ls
+cd Documents/Doctoral\ Research
+ls
+cd Doctoral\ Research
+ls
+cd "1st Year Review"
+ls

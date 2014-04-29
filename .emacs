@@ -12,6 +12,12 @@
 (load-theme 'twilight t)
 ;(load-theme 'bubbleberry t)
 
+;;CUA commands
+(cua-mode t)
+(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+(transient-mark-mode 1) ;; No region when it is not highlighted
+(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+
 ;; ;; adds the el-get commands
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (add-to-list 'load-path "~/.emacs.d/el-get")
@@ -44,11 +50,11 @@
 
 
 ;; undo tree
-(require 'undo-tree)
-(global-undo-tree-mode 1)
+;;(require 'undo-tree)
+;;(global-undo-tree-mode 1)
 
 ;; remap undo 
-(global-set-key (kbd "M-/") 'redo) ; Alt-/;
+(global-set-key (kbd "C-S-z") 'redo) ; Ctrl-Shift-z
 
 ;; Type/Backspace deletes selection
 (delete-selection-mode 1)
@@ -56,6 +62,9 @@
 ;; bind ibuffer to f10
 (global-set-key [f10] 'ibuffer) ; Alt-/;
 
+;; Find and replace 
+(define-key key-translation-map [f6] [?\C-s])
+(global-set-key [f7] 'replace-string)
 
 ;; Cycle between buffers using f11 and f12
 (require 'cycle-buffer)
@@ -215,14 +224,14 @@
     "] "
 
     ;; add the time, with the date and the emacs uptime in the tooltip
-    '(:eval (propertize (format-time-string "%H:%M")
-              'help-echo
-              (concat (format-time-string "%c; ")
-                      (emacs-uptime "Uptime:%hh"))))
+    ;;'(:eval (propertize (format-time-string "%H:%M")
+    ;;          'help-echo
+    ;;          (concat (format-time-string "%c; ")
+    ;;                  (emacs-uptime "Uptime:%hh"))))
     ;;" --"
     ;; i don't want to see minor-modes; but if you want, uncomment this:
     ;;minor-mode-alist  ;; list of minor modes
-    "% " ;; fill with '-'
+    ;;"% " ;; fill with '-'
     ))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
