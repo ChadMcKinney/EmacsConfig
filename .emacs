@@ -248,3 +248,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+;; emacs 21 has jit-lock which is better
+(setq font-lock-support-mode 'jit-lock-mode)
+(setq jit-lock-stealth-time 5
+	  jit-lock-defer-contextually t
+	  jit-lock-stealth-nice 0.5)
+(setq-default font-lock-multiline t)
