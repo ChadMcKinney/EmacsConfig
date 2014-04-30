@@ -82,6 +82,8 @@
 	
 )
 
+(set-face-background 'fringe "#111111")
+
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path

@@ -180,16 +180,18 @@
 
 (set-face-attribute 'mode-line nil
     :foreground "#eeeeee"
-    :background "#222222"
-    :overline "#222222"
-    :underline "#222222")
+    :background "#111111"
+    :overline "#111111"
+    :underline "#111111"
+	:box nil
+)
 
 ;; use setq-default to set it for /all/ modes
 ;(setq mode-line-format
 (setq-default mode-line-format
   (list
     ;; the buffer name; the file name as a tool tip
-    '(:eval (propertize "%b " 'face 'font-lock-keyword-face
+    '(:eval (propertize "  %b " 'face 'font-lock-keyword-face
         'help-echo (buffer-file-name)))
 
     ;; line and column
