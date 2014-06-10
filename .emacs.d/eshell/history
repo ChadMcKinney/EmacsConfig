@@ -1,42 +1,4 @@
 ls
-cd Documents/source/WebDev/Lich.js/Lich.js
-ls
-cd Library
-ls
-ls
-cd Documents/source/WebDev
-ls
-cd Lich.js/Lich.js
-ls
-ls
-cd Documents/source/HaskellDev
-ls
-chown octopian -R ./
-sudo chown octopian -R ./
-ls
-ls -a
-cd .emacs.d
-ls
-ls
-ls
-cd Documents/source/WebDev/Lich.js/Lich.js
-cd Library
-cd ~/.emacs.d
-ls
-ls
-mkdir article
-cd article
-ls
-cd ~/Documents
-ls
-cd "Doctoral Research"
-ls
-cd "GTA"
-ls
-cd "Computer Music"
-ls
-cd 2014
-ls
 cd work2
 ls
 ls
@@ -98,3 +60,69 @@ ls
 cd "1st Year Review"
 ls
 ls
+ls
+mv ProgrammerCoverLetter.txt CreativeCoderLetter.txt
+ls
+ls
+cd ../source/WebDev/Lich.js/Lich.js
+ls
+cd Library
+ls
+cd ../
+ls
+cp Lich.html Demo.html
+ls
+ls
+cd Networking
+ls
+ls
+cd ~/Documents/source/WebDev/NewWebSite
+ls
+cd ~/Documents/source/WebDev
+ls
+cd NewWebsite
+ls
+ls
+cd ../
+cd Lich.js/Lich.js
+ls
+cd CloudChamber.js
+cd ../../
+ls
+cd GetHiredStuff
+ls
+cd ../../
+ls
+cd source
+ls
+cd GameDev
+ls
+ls
+cd ../../GetHiredStuff
+ls
+cd ../WebDev/NewWebsite
+ls
+ls
+cd lich
+ls
+cd ../
+ls
+cd ../../../
+ls
+cd "Doctoral Research"
+ls
+cd Thesis
+ls
+ls
+cd ../
+ls
+cd HaskellDev
+ls
+cd Haskollider
+ls
+cd src
+ls
+cd Haskollider
+ls
+ls
+rm OSC.js

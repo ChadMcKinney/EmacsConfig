@@ -1,6 +1,6 @@
-;;; lich-theme.el --- Lich Theme
+;;; lich-light-themes.el --- Lich Theme
 
-;; Copyright (C) 2014 Chad McKinney
+;; Copyright (C) 2014 Curtis McKinney
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -15,20 +15,19 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-(deftheme lich
-  "lich theme")
+(deftheme lich-light
+  "lich light theme")
 
 (custom-theme-set-faces
- 'lich
+ 'lich-light
 
  `(minibuffer-prompt ((t (:foreground ,"#325f7f"))))
  
- '(default ((t (:background "#111111" :foreground "#d3d7cf"))))
+ '(default ((t (:background "#1e1e19" :foreground "#d3d7cf"))))
  '(mouse ((t (:foregound "black"))))
- '(cursor ((t (:foregound "#009966"))))
+ '(cursor ((t (:foregound "#73d216"))))
  '(border ((t (:foregound "#73d216"))))
  '(region ((t (:foreground "#000000" :background "#325f7f"))))
- '(vertical-border ((t (:background "#111111" :foreground "#111111"))))
  
  '(font-lock-comment-face ((t (:foreground "#61635e"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#61635e"))))
@@ -39,10 +38,10 @@
  '(font-lock-function-number-face ((t (:foreground "#902550" :bold t))))
  '(font-lock-builtin-face ((t (:foreground "#851b5c"))))
  '(font-lock-function-name-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-variable-name-face ((t (:foreground "#4ea683"))))
+ '(font-lock-variable-name-face ((t (:foreground "#c8c8a0"))))
  '(font-lock-preprocessor-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-constant-face ((t (:foreground "#4ea683" :bold t))))
- '(font-lock-type-face ((t (:foreground "#4ea683" :bold))))
+ '(font-lock-constant-face ((t (:foreground "#c8c8a0" :bold t))))
+ '(font-lock-type-face ((t (:foreground "#c8c8a0" :bold))))
  '(font-lock-warning-face ((t (:bold t :foreground "#913360"))))
  '(c++-font-lock-extra-types ((t (:foreground "#913360" :bold))))
  '(javascript-font-lock-extra-types ((t (:foreground "#913360" :bold))))
@@ -51,7 +50,6 @@
  ;; Search
  '(isearch ((t (:foreground "#080808" :background "#aa0077"))))
  '(isearch-lazy-highlight-face ((t (:foreground "#080808" :background "#7799aa"))))
-
 
  ;; Parenthesis matching
  '(show-paren-match ((t (:foreground "#000000" :background "#913360" :weight bold))))
@@ -83,14 +81,11 @@
 	
 )
 
-(set-face-background 'fringe "#111111")
-(setq cursor-in-non-selected-windows nil)
-
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'lich)
+(provide-theme 'lich-light)
 
-;;; lich-theme.el ends here
+;;; lich-light-theme.el ends here

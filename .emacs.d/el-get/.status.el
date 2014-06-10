@@ -1,4 +1,6 @@
-((desktop-menu status "installed" recipe
+((cl-lib status "installed" recipe
+		 (:name cl-lib :builtin "24.3" :type elpa :description "Properly prefixed CL functions and macros" :url "http://elpa.gnu.org/packages/cl-lib.html"))
+ (desktop-menu status "installed" recipe
 			   (:name desktop-menu :auto-generated t :type emacswiki :description "menu for managing Emacs desktops" :website "https://raw.github.com/emacsmirror/emacswiki.org/master/desktop-menu.el"))
  (el-get status "installed" recipe
 		 (:name el-get :website "https://github.com/dimitri/el-get#readme" :description "Manage the external elisp bits and pieces you depend upon." :type github :branch "master" :pkgname "dimitri/el-get" :info "." :load "el-get.el"))
@@ -31,6 +33,8 @@
 					  ("SC" . "http://joseito.republika.pl/sunrise-commander/"))))))
  (tabbar status "installed" recipe
 		 (:name tabbar :type emacswiki :description "Display a tab bar in the header line" :lazy t :load-path "."))
+ (thingatpt+ status "installed" recipe
+			 (:name thingatpt+ :type emacswiki :description "Extensions to `thingatpt.el'." :website "https://raw.github.com/emacsmirror/emacswiki.org/master/thingatpt+.el"))
  (undo-tree status "installed" recipe
 			(:name undo-tree :description "Treat undo history as a tree" :website "http://www.dr-qubit.org/emacs.php" :type git :url "http://www.dr-qubit.org/git/undo-tree.git/"))
  (yasnippet status "installed" recipe

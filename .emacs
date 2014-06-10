@@ -8,6 +8,11 @@
       "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
+(load-file "~/.emacs.d/powerline.el")
+;(require 'powerline)
+
+
+;(add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; theme
@@ -16,6 +21,7 @@
 ;(load-theme 'subdued t)
 ;(load-theme 'dotshare t)
 (load-theme 'lich t)
+;(load-theme 'lich-light t)
 
 ;;CUA commands
 (cua-mode t)
@@ -178,83 +184,109 @@
 ;; Custom Modeline
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; (set-face-attribute 'mode-line nil
+;;     :foreground "#eeeeee"
+;;     :background "#111111"
+;;     :overline nil
+;;     :underline nil
+;; 	:box nil
+;; )
+
+;; (set-face-attribute 'mode-line-inactive nil
+;;     :foreground nil
+;;     :background nil
+;;     :overline nil
+;;     :underline nil
+;; 	:box nil
+;; )
+
+;; ;; use setq-default to set it for /all/ modes
+;; ;(setq mode-line-format
+;; (setq-default mode-line-format
+;;   (list
+;;     ;; the buffer name; the file name as a tool tip
+;;     '(:eval (propertize "  %b " 'face 'font-lock-keyword-face
+;;         'help-echo (buffer-file-name)))
+
+;;     ;; line and column
+;;     "(" ;; '%02' to set to 2 chars at least; prevents flickering
+;;       (propertize "%02l" 'face 'font-lock-type-face) ","
+;;       (propertize "%02c" 'face 'font-lock-type-face) 
+;;     ") "
+
+;;     ;; relative position, size of file
+;;     "["
+;;     (propertize "%p" 'face 'font-lock-constant-face) ;; % above top
+;;     "/"
+;;     (propertize "%I" 'face 'font-lock-constant-face) ;; size
+;;     "] "
+
+;;     ;; the current major mode for the buffer.
+;;     "["
+
+;;     '(:eval (propertize "%m" 'face 'font-lock-string-face
+;;               'help-echo buffer-file-coding-system))
+;;     "] "
+
+
+;;     "[" ;; insert vs overwrite mode, input-method in a tooltip
+;;     '(:eval (propertize (if overwrite-mode "Ovr" "Ins")
+;;               'face 'font-lock-preprocessor-face
+;;               'help-echo (concat "Buffer is in "
+;;                            (if overwrite-mode "overwrite" "insert") " mode")))
+
+;;     ;; was this buffer modified since the last save?
+;;     '(:eval (when (buffer-modified-p)
+;;               (concat ","  (propertize "Mod"
+;;                              'face 'font-lock-warning-face
+;;                              'help-echo "Buffer has been modified"))))
+
+;;     ;; is this buffer read-only?
+;;     '(:eval (when buffer-read-only
+;;               (concat ","  (propertize "RO"
+;;                              'face 'font-lock-type-face
+;;                              'help-echo "Buffer is read-only"))))  
+;;     "] "
+
+;;     ;; add the time, with the date and the emacs uptime in the tooltip
+;;     ;;'(:eval (propertize (format-time-string "%H:%M")
+;;     ;;          'help-echo
+;;     ;;          (concat (format-time-string "%c; ")
+;;     ;;                  (emacs-uptime "Uptime:%hh"))))
+;;     ;;" --"
+;;     ;; i don't want to see minor-modes; but if you want, uncomment this:
+;;     ;;minor-mode-alist  ;; list of minor modes
+;;     ;;"% " ;; fill with '-'
+;;     ))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
+(setq powerline-color1 "#191919")
+(setq powerline-color2 "#262626")
+
+
 (set-face-attribute 'mode-line nil
-    :foreground "#eeeeee"
-    :background "#111111"
-    :overline "#111111"
-    :underline "#111111"
-	:box nil
-)
+                    :background "#224555"
+                    :box nil)
 
-;; use setq-default to set it for /all/ modes
-;(setq mode-line-format
-(setq-default mode-line-format
-  (list
-    ;; the buffer name; the file name as a tool tip
-    '(:eval (propertize "  %b " 'face 'font-lock-keyword-face
-        'help-echo (buffer-file-name)))
+(set-face-attribute 'mode-line-inactive nil
+					:background "#262626"
+					:foreground "#cccccc"
+					:box nil)
 
-    ;; line and column
-    "(" ;; '%02' to set to 2 chars at least; prevents flickering
-      (propertize "%02l" 'face 'font-lock-type-face) ","
-      (propertize "%02c" 'face 'font-lock-type-face) 
-    ") "
-
-    ;; relative position, size of file
-    "["
-    (propertize "%p" 'face 'font-lock-constant-face) ;; % above top
-    "/"
-    (propertize "%I" 'face 'font-lock-constant-face) ;; size
-    "] "
-
-    ;; the current major mode for the buffer.
-    "["
-
-    '(:eval (propertize "%m" 'face 'font-lock-string-face
-              'help-echo buffer-file-coding-system))
-    "] "
-
-
-    "[" ;; insert vs overwrite mode, input-method in a tooltip
-    '(:eval (propertize (if overwrite-mode "Ovr" "Ins")
-              'face 'font-lock-preprocessor-face
-              'help-echo (concat "Buffer is in "
-                           (if overwrite-mode "overwrite" "insert") " mode")))
-
-    ;; was this buffer modified since the last save?
-    '(:eval (when (buffer-modified-p)
-              (concat ","  (propertize "Mod"
-                             'face 'font-lock-warning-face
-                             'help-echo "Buffer has been modified"))))
-
-    ;; is this buffer read-only?
-    '(:eval (when buffer-read-only
-              (concat ","  (propertize "RO"
-                             'face 'font-lock-type-face
-                             'help-echo "Buffer is read-only"))))  
-    "] "
-
-    ;; add the time, with the date and the emacs uptime in the tooltip
-    ;;'(:eval (propertize (format-time-string "%H:%M")
-    ;;          'help-echo
-    ;;          (concat (format-time-string "%c; ")
-    ;;                  (emacs-uptime "Uptime:%hh"))))
-    ;;" --"
-    ;; i don't want to see minor-modes; but if you want, uncomment this:
-    ;;minor-mode-alist  ;; list of minor modes
-    ;;"% " ;; fill with '-'
-    ))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 
 ;; emacs 21 has jit-lock which is better
-(setq font-lock-support-mode 'jit-lock-mode)
-(setq jit-lock-stealth-time 5
-	  jit-lock-defer-contextually t
-	  jit-lock-stealth-nice 0.5)
-(setq-default font-lock-multiline t)
+;; (setq font-lock-support-mode 'jit-lock-mode)
+;; (setq jit-lock-stealth-time 5
+;; 	  jit-lock-defer-contextually t
+;; 	  jit-lock-stealth-nice 0.5)
+;; (setq-default font-lock-multiline t)
+
+
+
+;; lich-mode
+(load-file "~/.emacs.d/lich/lich-mode.el")
