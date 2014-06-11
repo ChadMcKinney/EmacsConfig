@@ -180,9 +180,9 @@
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Custom Modeline
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Custom Modeline -- REPLACED BY POWERLINE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; (set-face-attribute 'mode-line nil
 ;;     :foreground "#eeeeee"
@@ -280,11 +280,11 @@
 
 
 ;; emacs 21 has jit-lock which is better
-;; (setq font-lock-support-mode 'jit-lock-mode)
-;; (setq jit-lock-stealth-time 5
-;; 	  jit-lock-defer-contextually t
-;; 	  jit-lock-stealth-nice 0.5)
-;; (setq-default font-lock-multiline t)
+(setq font-lock-support-mode 'jit-lock-mode)
+(setq jit-lock-stealth-time 5
+	  jit-lock-defer-contextually t
+	  jit-lock-stealth-nice 1) ; was 0.5
+(setq-default font-lock-multiline t)
 
 
 
