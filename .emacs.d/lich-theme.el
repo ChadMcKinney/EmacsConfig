@@ -39,10 +39,10 @@
  '(font-lock-function-number-face ((t (:foreground "#902550" :bold t))))
  '(font-lock-builtin-face ((t (:foreground "#851b5c"))))
  '(font-lock-function-name-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-variable-name-face ((t (:foreground "#2e9696")))) ;#4ea683
+ '(font-lock-variable-name-face ((t (:foreground "#2e9690")))) ;#4ea683
  '(font-lock-preprocessor-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-constant-face ((t (:foreground "#2e9696" :bold t))))
- '(font-lock-type-face ((t (:foreground "#2e9696" :bold))))
+ '(font-lock-constant-face ((t (:foreground "#2e9690" :bold t)))) ;2e9990
+ '(font-lock-type-face ((t (:foreground "#2e9690" :bold))))
  '(font-lock-warning-face ((t (:bold t :foreground "#913360"))))
  '(c++-font-lock-extra-types ((t (:foreground "#913360" :bold))))
  '(javascript-font-lock-extra-types ((t (:foreground "#913360" :bold))))

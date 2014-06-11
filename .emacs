@@ -290,3 +290,4 @@
 
 ;; lich-mode
 (load-file "~/.emacs.d/lich/lich-mode.el")
+;(set-frame-font "Liberation Mono-13" nil t)
