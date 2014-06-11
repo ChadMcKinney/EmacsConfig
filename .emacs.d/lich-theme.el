@@ -32,17 +32,17 @@
  
  '(font-lock-comment-face ((t (:foreground "#61635e"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#61635e"))))
- '(font-lock-doc-face ((t (:foreground "#7cffd1"))))
- '(font-lock-doc-string-face ((t (:foreground "#7cffd1"))))
+ '(font-lock-doc-face ((t (:foreground "#7cabab"))))
+ '(font-lock-doc-string-face ((t (:foreground "#7cabab"))))
  '(font-lock-string-face ((t (:foreground "#8ccfd1"))))
- '(font-lock-keyword-face ((t (:foreground "#727faf" :bold t))))
+ '(font-lock-keyword-face ((t (:foreground "#337fa0" :bold t)))) ;727faf
  '(font-lock-function-number-face ((t (:foreground "#902550" :bold t))))
  '(font-lock-builtin-face ((t (:foreground "#851b5c"))))
  '(font-lock-function-name-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-variable-name-face ((t (:foreground "#4ea683"))))
+ '(font-lock-variable-name-face ((t (:foreground "#2e9696")))) ;#4ea683
  '(font-lock-preprocessor-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-constant-face ((t (:foreground "#4ea683" :bold t))))
- '(font-lock-type-face ((t (:foreground "#4ea683" :bold))))
+ '(font-lock-constant-face ((t (:foreground "#2e9696" :bold t))))
+ '(font-lock-type-face ((t (:foreground "#2e9696" :bold))))
  '(font-lock-warning-face ((t (:bold t :foreground "#913360"))))
  '(c++-font-lock-extra-types ((t (:foreground "#913360" :bold))))
  '(javascript-font-lock-extra-types ((t (:foreground "#913360" :bold))))
