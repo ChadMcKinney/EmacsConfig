@@ -33,20 +33,20 @@
  '(font-lock-comment-face ((t (:foreground "#61635e"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#61635e"))))
  '(font-lock-doc-face ((t (:foreground "#7cabab"))))
- '(font-lock-doc-string-face ((t (:foreground "#7cabab"))))
- '(font-lock-string-face ((t (:foreground "#8ccfd1"))))
- '(font-lock-keyword-face ((t (:foreground "#337fa0" :bold t)))) ;727faf
- '(font-lock-function-number-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-builtin-face ((t (:foreground "#851b5c"))))
- '(font-lock-function-name-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-variable-name-face ((t (:foreground "#2e9690")))) ;#4ea683
- '(font-lock-preprocessor-face ((t (:foreground "#902550" :bold t))))
- '(font-lock-constant-face ((t (:foreground "#2e9690" :bold t)))) ;2e9990
- '(font-lock-type-face ((t (:foreground "#2e9690" :bold))))
- '(font-lock-warning-face ((t (:bold t :foreground "#913360"))))
- '(c++-font-lock-extra-types ((t (:foreground "#913360" :bold))))
- '(javascript-font-lock-extra-types ((t (:foreground "#913360" :bold))))
- '(haskell-font-lock-extra-types ((t (:foreground "#913360" :bold))))
+ '(font-lock-doc-string-face ((t (:foreground "#500050"))))
+ '(font-lock-string-face ((t (:foreground "#baa090")))) ;8ccfd1
+ '(font-lock-keyword-face ((t (:foreground "#339fa0" :bold t)))); 337fa0 ;727faf
+ '(font-lock-function-number-face ((t (:foreground "#83705a" :bold t)))) ;83705a
+ '(font-lock-builtin-face ((t (:foreground "#85497c")))) ;851b5c
+ '(font-lock-function-name-face ((t (:foreground "#83705a" :bold t))))
+ '(font-lock-variable-name-face ((t (:foreground "#85497c")))) ;#4ea683
+ '(font-lock-preprocessor-face ((t (:foreground "#83705a" :bold t))))
+ '(font-lock-constant-face ((t (:foreground "#509f9f" :bold t)))) ;2*saved*e9690 ;2e9990
+ '(font-lock-type-face ((t (:foreground "#509f9f" :bold)))) ;509f9f
+ '(font-lock-warning-face ((t (:bold t :foreground "#83705a")))) ; 8*saved*37050
+ '(c++-font-lock-extra-types ((t (:foreground "#83705a" :bold)))) ; 9*saved*13360
+ '(javascript-font-lock-extra-types ((t (:foreground "#83705a" :bold))))
+ '(haskell-font-lock-extra-types ((t (:foreground "#83705a" :bold))))
  
  ;; Search
  '(isearch ((t (:foreground "#080808" :background "#aa0077"))))
@@ -54,7 +54,7 @@
 
 
  ;; Parenthesis matching
- '(show-paren-match ((t (:foreground "#000000" :background "#913360" :weight bold))))
+ '(show-paren-match ((t (:foreground "#000000" :background "#83705a" :weight bold))))
  '(show-paren-mismatch ((t (:foreground "#000000" :background "#f10060" :weight bold))))
  
  ;; Line highlighting

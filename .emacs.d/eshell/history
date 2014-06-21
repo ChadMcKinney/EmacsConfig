@@ -1,30 +1,3 @@
-ls
-cd work2
-ls
-ls
-cd ../
-ls
-cd ../
-ls
-cd Doctoral\ Research
-ls
-cd SupervisorMeetings
-ls
-ls
-cd ../
-ls
-cd NIME\ 2014
-ls
-cd LichPaper
-ls
-cd ../
-ls
-cd ../
-ls
-cd DistCoStudy
-ls
-cd article
-ls
 cd ../
 cd ../
 ls
@@ -126,3 +99,30 @@ cd Haskollider
 ls
 ls
 rm OSC.js
+cd ../../../
+ls
+ls
+grep -iR JACK
+grep -iR "JACK"
+grep -iR "SC_JACK"
+grep -iR "START_SERVER"
+grep -iR "SC_JACK"
+grep -iR "JACK"
+ls
+cd ../../../
+ls
+cd ../SuperCollider/SuperCollider-3-6-3
+ls
+cd ../SuperCollider/SuperCollider-Source-3-6-3
+ls
+grep -iR "_NetAddr_SendBundle"
+sudo grep -iR "_NetAddr_SendBundle"
+grep -iR "_NetAddr_SendBundle"
+ls
+cp -R CV AardvarkCV
+ls
+cd AardvarkCV
+ls
+grep -iR ">>"
+grep -iR ">>"
+grep -iR ">>"

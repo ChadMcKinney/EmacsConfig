@@ -22,6 +22,7 @@
 ;(load-theme 'dotshare t)
 (load-theme 'lich t)
 ;(load-theme 'lich-light t)
+;(load-theme 'granger t)
 
 ;;CUA commands
 (cua-mode t)
@@ -264,17 +265,20 @@
 ;;  ;; Your init file should contain only one such instance.
 ;;  ;; If there is more than one, they won't work right.
 ;;  )
-(setq powerline-color1 "#191919")
+(setq powerline-color1 "#191919") ; #191919
 (setq powerline-color2 "#262626")
 
 
 (set-face-attribute 'mode-line nil
-                    :background "#224555"
-                    :box nil)
+                    ;:background "#4a3c32" ; 483c32 005565 "#225569"  "#224555" ;#337080
+					;:background "#006959"
+					:background "#4a3e34"
+					;:foreground "#FFFFFF"
+					:box nil)
 
 (set-face-attribute 'mode-line-inactive nil
 					:background "#262626"
-					:foreground "#cccccc"
+					;:foreground "#999999" ;cccccc
 					:box nil)
 
 
@@ -290,4 +294,8 @@
 
 ;; lich-mode
 (load-file "~/.emacs.d/lich/lich-mode.el")
-;(set-frame-font "Liberation Mono-13" nil t)
+(lich-set-path "/home/octopian/Documents/source/WebDev/Lich.js/")
+(global-set-key (kbd "C-l") 'lich-mode)
+(global-set-key (kbd "M-<up>") 'lich-backward-paragraph-onto-line)
+(global-set-key (kbd "M-<down>") 'lich-forward-paragraph-onto-line)
+;(set-frame-font "DeJaVu Sans Mono-12" nil t)
